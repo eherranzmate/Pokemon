@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Pokemon/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav>  
+        <div id="ancla" class="container-img"> 
+            <a href="http://127.0.0.1:5500/Pokemon/index.html">
+                <img class="nav-img" src="/Pokemon/Assets/pokeball2-png.png" alt="pokeball"> 
+            </a>
+        </div>
+        <div class="container-searcher-filter">
+            <label>Pokemon</label>
+            <input type="text" data-function="searcher">
+            <label>Tipos</label>
+            <input type="text" data-function="filter">
+        </div>
+    </nav>
+    <div class="container">
+        <img class="title" src="/Pokemon/Assets/pokemon.png" alt="Título pokemon">
+        <h1>Tipos más comunes</h1>
+        <div id="types-container">
+            <button class="type-button"><img data-type="water" src="/Pokemon/Assets/water type.jpeg"></button>
+            <button class="type-button"><img data-type="electric" src="/Pokemon/Assets/Pokémon_Electric_Type_Icon.svg.png"></button>
+            <button class="type-button"><img data-type="fighting" src="/Pokemon/Assets/Pokémon_Fighting_Type_Icon.svg.png"></button>
+            <button class="type-button"><img data-type="rock" src="/Pokemon/Assets/Pokémon_Rock_Type_Icon.svg.png"></button>
+        </div>
+        <div id="pokedex"></div>
+    </div>
+    <div class="pagination">
+        <button id="prevBtn"><img class="btn-img" src="/Pokemon/Assets/pokeball2-png.png"/>Atrás</button>
+        <button id="nextBtn"><img class="btn-img" src="/Pokemon/Assets/pokeball2-png.png"/> Siguiente</button>
+    </div>
+    <script src="main.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
